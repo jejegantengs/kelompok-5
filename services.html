@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Perfect Website - Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Musik</title>
+    <style>
+        
+
+        
+        
+
+        .playlist {
+            background: white; /* Latar belakang putih untuk playlist */
+            border-radius: 10px; /* Sudut melengkung */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+            overflow: hidden; /* Menghindari overflow */
+            transition: transform 0.3s; /* Transisi untuk efek hover */
+        }
+
+        .playlist:hover {
+            transform: scale(1.05); /* Memperbesar saat hover */
+        }
+
+        iframe {
+            width: 100%; /* Lebar penuh */
+            height: 380px; /* Tinggi iframe */
+            border: none; /* Menghilangkan border */
+        }
+
+        .playlist-title {
+            padding: 10px;
+            text-align: center; /* Memusatkan teks */
+            font-size: 18px; /* Ukuran font judul */
+            font-weight: bold; /* Bold untuk judul */
+            color: #333; /* Warna teks */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>P L A Y L I S T</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Playlist</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+           <center> <h2>Playlist music</h2></center>
+    <div class="playlist-container">
+        <!-- Playlist Spotify -->
+        <div class="playlist">
+            <div class="playlist-title">Spotify Playlist</div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/3S9VH5gQTToJAgqmgAT4w3?utm_source=generator&theme=0" width="70%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 My Perfect Website. All rights reserved.
+    </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Perfect Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #f79ccb;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #913065;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Agar isi tidak keluar dari kotak */
+        }
+        .content img {
+            width: 250px; /* Menyesuaikan ukuran gambar */
+            height: auto;
+            border: 5px solid #4CAF50; /* Border pada foto */
+            border-radius: 10px; /* Sudut yang melengkung */
+            float: left; /* Memposisikan gambar di kiri */
+            margin: 0 20px 20px 0; /* Menambahkan margin di sekitar gambar */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Blog Prof. Dr. Hj. Syahwa Nanda Syaherah S.kom, M.kom</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="content" id="home">
+            <h2>Home</h2>
+            <img src="https://i.pinimg.com/736x/4d/d1/3d/4dd13d8c89d17094ceeefd4a5572b81b.jpg" alt="Photo of Prof. Dr. Hj. Syahwa Nanda Syaherah">
+            <p>This is the home section of the website. Welcome! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum, magna nec malesuada sagittis, magna ex vehicula nunc, at convallis velit justo a libero. Integer euismod lacinia nisi, eu pellentesque risus pharetra sit amet.</p>
+        </div>
+        <div class="content" id="about">
+            <h2>About</h2>
+            <p>This is the about section. Learn more about us here.</p>
+        </div>
+        <div class="content" id="services">
+            <h2>Services</h2>
+            <p>These are the services we offer. Check them out!</p>
+        </div>
+        <div class="content" id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us through this contact section.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 My Perfect Website. All rights reserved.
+    </footer>
+</body>
+</html>

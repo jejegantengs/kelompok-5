@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('"C:\laragon\www\jj\pm\img\ceri.jpg"'); /* Gambar latar belakang */
+    background-size: cover; /* Menutupi seluruh area */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Jangan ulang gambar */
+}
+header {
+    background-color: #f79ccb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out; /* Animasi fade in */
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #913065;
+    animation: slideIn 1s ease-in-out; /* Animasi slide in */
+}
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Animasi fade in */
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.container {
+    padding: 20px;
+}
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparansi latar belakang putih */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Agar isi tidak keluar dari kotak */
+    animation: scaleUp 2s ease-in-out; /* Animasi scale up */
+}
+.content img {
+    width: 450px; /* Menyesuaikan ukuran gambar */
+    height: auto; /* Mempertahankan rasio aspek */
+    border: 5px solid #e25e95; /* Border pada foto */
+    border-radius: 10px; /* Sudut yang melengkung */
+    display: block; /* Mengubah menjadi block untuk memusatkan */
+    margin: 0 auto 20px auto; /* Memusatkan gambar dan menambahkan margin bawah */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek animasi */
+}
+
+.content img:hover {
+    transform: scale(1.1); /* Memperbesar gambar saat cursor mendekat */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 3s ease-in-out; /* Animasi fade in */
+}
+.audio-frame {
+    position: absolute;
+    left: -9999px; /* Menyembunyikan tampilan video */
+}
+#background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden; /* Agar elemen tidak keluar dari kotak */
+    z-index: -1; /* Menempatkan di belakang elemen lainnya */
+}
+.flower, .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: float 10s infinite linear;
+    opacity: 0.7;
+}
+
+/* Membentuk bunga */
+.flower {
+    background-color: pink;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px white, 0 0 0 20px pink, 0 0 0 30px white;
+}
+
+/* Membentuk cinta (love) */
+.heart {
+    background-color: red;
+    transform: rotate(-45deg);
+    position: relative;
+}
+.heart::before, .heart::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+}
+.heart::before {
+    top: -10px;
+    left: 0;
+}
+.heart::after {
+    top: 0;
+    left: 10px;
+}
+
+@keyframes float {
+    0% { 
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 1;
+    }
+    100% { 
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0.7;
+    }
+}
+
+/* Keyframes untuk animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.audio-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pause-resume-button {
+    background-color: #ff0088; /* Warna merah untuk tombol */
+    color: white; /* Teks putih */
+    border: none; /* Tanpa border */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Pointer saat hover */
+    border-radius: 5px; /* Sudut membulat */
+    transition: background-color 0.3s; /* Transisi warna */
+}
+
+.pause-resume-button:hover {
+    background-color: #fb7fde; /* Warna saat hover */
+}
+.contact-person {
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.input-fields {
+    margin-bottom: 20px; /* Jarak antara input dan ikon */
+}
+
+.input-fields input {
+    padding: 10px; /* Padding untuk input */
+    margin: 5px; /* Margin antar input */
+    width: 200px; /* Lebar input */
+}
+
+.contact-icons {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan ikon */
+    gap: 20px; /* Jarak antara ikon */
+}
+
+.contact-person {
+    text-align: center; /* Memusatkan teks */
+    margin: 20px 0; /* Margin atas dan bawah */
+}
+
+.contact-icons {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan ikon */
+    gap: 20px; /* Jarak antara ikon */
+}
+
+.contact-icon {
+    font-size: 40px; /* Ukuran ikon */
+    color: #ff469f; /* Warna ikon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    display: inline-flex; /* Menggunakan flexbox untuk ikon dan teks */
+    align-items: center; /* Memusatkan ikon dan teks secara vertikal */
+    transition: color 0.3s; /* Transisi warna saat hover */
+}
+
+.contact-icon:hover {
+    color: #ed005b; /* Warna saat hover */
+}
+
+.contact-icon span {
+    margin-left: 8px; /* Jarak antara ikon dan teks */
+    font-size: 16px; /* Ukuran font untuk teks */
+}
+
+
+h2 {
+    color: #eb5199; /* Warna judul */
+    font-weight: 700; /* Bold untuk judul */
+}
+
+.profile-list {
+    list-style-type: none; /* Menghilangkan bullet point */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.profile-list li {
+    background: #e9ecef; /* Warna latar belakang untuk item daftar */
+    margin: 10px 0; /* Margin atas dan bawah untuk item daftar */
+    padding: 10px; /* Padding untuk item daftar */
+    border-radius: 5px; /* Sudut membulat untuk item daftar */
+    transition: background 0.3s; /* Transisi untuk efek hover */
+}
+
+.profile-list li:hover {
+    background: #ff009d; /* Warna latar belakang saat hover */
+    color: white; /* Warna teks saat hover */
+}
+.image-container {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Memusatkan gambar utama */
+    align-items: center; /* Memusatkan gambar secara vertikal */
+    gap: 20px; /* Jarak antara gambar */
+}
+
+.side-image {
+    width: 150px; /* Ukuran gambar di sisi */
+    height: auto; /* Mempertahankan rasio aspek */
+    border: 5px solid #e25e95; /* Border pada foto */
+    border-radius: 10px; /* Sudut yang melengkung */
+}
+
+.main-image {
+    width: 250px; /* Ukuran gambar utama */
+    height: auto; /* Mempertahankan rasio aspek */
+    border: 5px solid #e25e95; /* Border pada foto */
+    border-radius: 10px; /* Sudut yang melengkung */
+}/* Mengatur container tombol */
+.audio-controls {
+    text-align: center;
+    margin-top: -50px; /* Nilai negatif untuk menaikkan tombol */
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; /* Pastikan di atas elemen lain */
+}
+
